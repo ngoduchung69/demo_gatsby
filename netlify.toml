@@ -1,6 +1,6 @@
 [build]
   Command = "npm run build && npm run build:lambda"
-  Functions = "lambda"
+  Functions = "built-lambda"
   Publish = "build"
 [context.production]
   Command = "npm run schema:start-and-publish && npm run build && npm run build:lambda"
