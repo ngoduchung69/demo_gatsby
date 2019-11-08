@@ -2,7 +2,3 @@
   Command = "npm run build && npm run build:lambda"
   Functions = "built-lambda"
   Publish = "build"
-[context.production]
-  Command = "npm run schema:start-and-publish && npm run build && npm run build:lambda"
-[context.deploy-preview]
-  Command = "npm run schema:start-and-check && npm run build && npm run build:lambda"
